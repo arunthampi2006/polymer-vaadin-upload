@@ -1,0 +1,27 @@
+<dom-module id="exp-job-customer-list-upload">
+  <template>
+    <style>
+      :host {
+        width: 90%;
+      }
+      .base-box {
+        display: inline-block;
+        min-height: 14em;
+        padding: 0 12px;
+        width: 100%;
+      }
+      vaadin-upload#cstmListUpload {
+        padding: 7px;
+      }
+    </style>
+    <div class="base-box">
+      <form is="iron-form" id="EJCstmListForm">
+        <vaadin-upload required max-files="1" id="cstmListUpload" accept=".csv" max-file-size="5000000">
+          <!-- <iron-icon slot="drop-label-icon" icon=""></iron-icon> -->
+          <span slot="drop-label">Up to 5MB csv file</span>
+        </vaadin-upload>
+      </form>
+    </div>
+  </template>
+  <script src="exp-job-customer-list-upload.js"></script>
+</dom-module>
