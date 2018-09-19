@@ -1,1 +1,1 @@
-test
+Vaadin file upload
